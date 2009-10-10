@@ -1,0 +1,10 @@
+set number
+set backspace=2
+set nocompatible
+set term=xterm-color
+set smartindent
+set expandtab
+set tabstop=4
+set showmatch
+syntax on
+colorscheme slate

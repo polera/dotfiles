@@ -7,3 +7,5 @@ export PATH HOME TERM
 #export PKG_PATH='http://mirror.rit.edu/pub/OpenBSD/4.7/packages/amd64/'
 export PKG_PATH='http://ftp.OpenBSD.org/pub/OpenBSD/4.7/packages/amd64/'
 export EDITOR='vim'
+export HOST=`hostname -s`
+export PS1='$USER@$HOST$ '

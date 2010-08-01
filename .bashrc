@@ -1,3 +1,4 @@
+# Color reference from: http://www.systhread.net/texts/200703bashish.php
 DULL=0
 BRIGHT=1
 
@@ -61,7 +62,7 @@ REV_RED="\[$ESC[${DULL};${FG_YELLOW}; ${BG_RED}m\]"
 
 PROMPT_COMMAND='export ERR=$?'
 
-export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w >>${RESET}"
+export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
 export PATH=$PATH:/Users/james/org/bin:/Users/james/org/bin/homebrew/bin:/Users/james/org/bin/FSharp/bin:$HOME/.local/bin:/opt/local/bin:/User/james/org/bin/mzscheme/bin:/Users/james/org/bin/play-1.0.2.1:/Users/james/bin:/Users/james/org/bin/homebrew/sbin

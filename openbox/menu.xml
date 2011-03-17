@@ -33,9 +33,9 @@
 </menu>
 
 <menu id="apps-term-menu" label="Terminals">
-  <item label="Gnome Terminal">
+  <item label="Terminal">
     <action name="Execute">
-      <command>/usr/local/bin/gnome-terminal</command>
+      <command>terminal</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -49,7 +49,7 @@
 <menu id="apps-net-menu" label="Internet">
   <item label="Firefox">
     <action name="Execute">
-      <command>firefox35</command>
+      <command>firefox</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>

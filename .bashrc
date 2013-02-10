@@ -65,12 +65,5 @@ PROMPT_COMMAND='export ERR=$?'
 export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
-#export PATH=$PATH:/Users/james/org/bin:/Users/james/org/bin/homebrew/bin:/Users/james/org/bin/FSharp/bin:$HOME/.local/bin:/opt/local/bin:/User/james/org/bin/mzscheme/bin:/Users/james/org/bin/play-1.0.2.1:/Users/james/bin:/Users/james/org/bin/homebrew/sbin
-export PATH=$PATH:/usr/X11R7/bin:/sbin:/usr/sbin
-WINGPYTHON='/usr/bin/python'
-VERSIONER_PYTHON_PREFER_32_BIT=yes
-PYTHONPATH=/Developer/MacPyGTK/inst/lib/python2.6/site-packages
-
-export GOROOT=$HOME/go
-export GOARCH=386
-export GOOS=darwin
+export WORKON_HOME="~/.virtualenvs"
+source /usr/local/bin/virtualenvwrapper.sh

@@ -66,4 +66,16 @@ export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
 export WORKON_HOME="~/.virtualenvs"
+source $HOME/.profile
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+
+export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH 
+
+#[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+export EDITOR='vim'
+[[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
+

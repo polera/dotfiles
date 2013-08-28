@@ -66,11 +66,11 @@ export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
 export WORKON_HOME="~/.virtualenvs"
-source $HOME/.profile
+export VIRTUALENV_PYTHON="/usr/local/bin/python"
 source /usr/local/bin/virtualenvwrapper.sh
 
 
-export PATH="/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
 
 export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH 
 

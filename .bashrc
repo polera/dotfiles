@@ -72,10 +72,16 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="/usr/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
 
-export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH 
+export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH:/usr/local/go/bin
 
 #[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 export EDITOR='vim'
 [[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
 
+export GOROOT=/usr/local/go
+
+
+function gp {
+    export GOPATH=`pwd`;
+}

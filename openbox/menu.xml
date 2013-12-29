@@ -35,7 +35,7 @@
 <menu id="apps-term-menu" label="Terminals">
   <item label="Terminal">
     <action name="Execute">
-      <command>terminal</command>
+      <command>xfce4-terminal</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -47,21 +47,12 @@
 </menu>
 
 <menu id="apps-net-menu" label="Internet">
-  <item label="Firefox">
+  <item label="Chromium">
     <action name="Execute">
-      <command>firefox</command>
+      <command>chrome</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Firefox</wmclass>
-      </startupnotify>
-    </action>
-  </item>
-  <item label="Midori">
-    <action name="Execute">
-      <command>midori</command>
-      <startupnotify>
-        <enabled>yes</enabled>
-        <wmclass>Midori</wmclass>
+        <wmclass>Chromium</wmclass>
       </startupnotify>
     </action>
   </item>

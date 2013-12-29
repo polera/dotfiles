@@ -72,7 +72,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export PATH="/usr/local/bin:/usr/bin:/usr/local/heroku/bin:$PATH"
 
-export PATH=$HOME/bin:$HOME/.rbenv/shims:/usr/local/sbin:$PATH 
+export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH:/usr/local/go/bin
 
 #[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 

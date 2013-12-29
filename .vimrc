@@ -90,6 +90,8 @@ color wombat256mod
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
 filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
@@ -197,3 +199,4 @@ inoremap <silent><C-k> <C-R>=OmniPopup('k')<CR>
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
 set nofoldenable
+let g:vim_markdown_folding_disabled=1

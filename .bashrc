@@ -66,16 +66,22 @@ export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
 export WORKON_HOME="~/.virtualenvs"
-export VIRTUALENV_PYTHON="/usr/local/bin/python"
+export VIRTUALENVWRAPPER_PYTHON="/Library/Frameworks/Python.framework/Versions/2.7/bin/python"
 source /usr/local/bin/virtualenvwrapper.sh
 
 
-export PATH="/usr/bin:/usr/local/bin:/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/usr/local/heroku/bin:$PATH"
 
-export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH 
+export PATH=$HOME/bin:$HOME/.rbenv/shims:/usr/local/sbin:$PATH 
 
 #[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 export EDITOR='vim'
 [[ -s "$HOME/.tmuxifier/init.sh" ]] && source "$HOME/.tmuxifier/init.sh"
 
+export GOROOT='/usr/local/go'
+set -o vi
+
+function gp {
+    export GOPATH=`pwd`;
+}

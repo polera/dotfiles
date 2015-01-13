@@ -1,3 +1,4 @@
+"$GOROOT/bin:$GOPATH/bin
 " Sample .vimrc file by Martin Brochhaus
 " Presented at PyCon APAC 2012
 
@@ -84,8 +85,8 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 " mkdir -p ~/.vim/colors &amp;&amp; cd ~/.vim/colors
 " wget -O wombat256mod.vim http://www.vim.org/scripts/download_script.php?src_id=13400
 set t_Co=256
-color wombat256mod
-
+" color wombat256mod
+color spacegray
 
 " Enable syntax highlighting
 " You need to reload this file for the change to apply
@@ -141,8 +142,8 @@ set noswapfile
 " mkdir -p ~/.vim/autoload ~/.vim/bundle
 " curl -so ~/.vim/autoload/pathogen.vim https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 " Now you can install any plugin into a .vim/bundle/plugin-name/ folder
-call pathogen#infect()
-
+execute pathogen#infect()
+execute pathogen#helptags()
 
 " ============================================================================
 " Python IDE Setup

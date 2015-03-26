@@ -66,13 +66,13 @@ export PS1="${GREEN}\h ${WHITE}:: ${BRIGHT_BLUE}\w ${WHITE}>>${RESET}"
 
 
 export WORKON_HOME="~/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON="/Library/Frameworks/Python.framework/Versions/2.7/bin/python"
-source /usr/local/bin/virtualenvwrapper.sh
+#export VIRTUALENVWRAPPER_PYTHON="/Library/Frameworks/Python.framework/Versions/2.7/bin/python"
+#source /usr/local/bin/virtualenvwrapper.sh
 
 
 export PATH="/usr/local/bin:/usr/bin:/usr/local/heroku/bin:$PATH"
 
-export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH:/usr/local/go/bin
+export PATH=$HOME/bin:$HOME/.rbenv/shims:$PATH:/usr/local/go/bin:/usr/local/jdk-1.7.0/bin
 
 #[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
@@ -82,6 +82,17 @@ export EDITOR='vim'
 export GOROOT='/usr/local/go'
 set -o vi
 
+export PKG_PATH='http://openbsd.mirror.frontiernet.net/pub/OpenBSD/5.4/packages/amd64'
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/org/projects/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+source /usr/local/bin/virtualenvwrapper.sh
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 function gp {
     export GOPATH=`pwd`;
 }
+
+alias ls='ls -G'
